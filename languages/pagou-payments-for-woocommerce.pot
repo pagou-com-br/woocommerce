@@ -1,0 +1,109 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pagou - Pagamentos para WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-21 21:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE"
+
+#: includes/class/pagou_boleto.php:137
+msgid "Aguardando pagamento via Boleto."
+msgstr ""
+
+#: includes/class/pagou_pix.php:129
+msgid "Aguardando pagamento via Pix."
+msgstr ""
+
+#: includes/templates/pdf.php:9
+msgid "Agência:"
+msgstr ""
+
+#: includes/templates/pdf.php:7
+msgid "Banco emissor:"
+msgstr ""
+
+#: includes/templates/pdf_loading.php:2
+msgid "Carregando seu boleto..."
+msgstr ""
+
+#: includes/templates/pdf.php:11
+msgid "Cedente:"
+msgstr ""
+
+#: includes/templates/pdf.php:15
+msgid "Clique para copiar o código e pagar em seu banco."
+msgstr ""
+
+#: includes/templates/pdf.php:10
+msgid "Conta:"
+msgstr ""
+
+#: includes/functions.php:166
+msgid "Detalhes do pedido e pagamento"
+msgstr ""
+
+#: includes/templates/pix.php:5
+msgid ""
+"Escaneie o código QR abaixo para realizar o pagamento ou copie o código PIX."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://pagou.com.br/"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Integration with the Pagou payment gateway, allowing the use of PIX and "
+"Boleto as payment methods in WooCommerce."
+msgstr ""
+
+#: includes/templates/pdf.php:8
+msgid "Número:"
+msgstr ""
+
+#: includes/templates/pix.php:7
+msgid "ou clique abaixo para copiar o código e pagar em seu banco"
+msgstr ""
+
+#: includes/templates/pdf.php:4
+msgid "Pagamento via Boleto"
+msgstr ""
+
+#: includes/templates/pix.php:4
+msgid "Pagamento via PIX"
+msgstr ""
+
+#. Author of the plugin
+#: pagou-payments-for-woocommerce.php:29 pagou-payments-for-woocommerce.php:31
+msgid "Pagou"
+msgstr ""
+
+#. Name of the plugin
+msgid "Pagou - Payments for WooCommerce"
+msgstr ""
+
+#: pagou-payments-for-woocommerce.php:31
+msgid ""
+"requer o plugin <strong>Brazilian Market on WooCommerce</strong> instalado e "
+"ativo para funcionar. Por favor, instale e ative o <a href=\"https:"
+"//wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/\" "
+"target=\"_blank\">Brazilian Market on WooCommerce</a>.</p></div>"
+msgstr ""
+
+#: pagou-payments-for-woocommerce.php:29
+msgid ""
+"requer o WooCommerce instalado e ativo para funcionar. Por favor, instale e "
+"ative o WooCommerce."
+msgstr ""
+
+#: includes/templates/pdf.php:16
+msgid "Ver boleto completo"
+msgstr ""
