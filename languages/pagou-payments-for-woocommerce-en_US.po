@@ -1,146 +1,1413 @@
+# Copyright (C) 2026 Pagou
+# This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Pagou - Pagamentos para WooCommerce 1.0.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-15 11:09+0000\n"
-"Last-Translator: \n"
+"Project-Id-Version: Pagou - Payments for WooCommerce 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pagou-payments-for-woocommerce\n"
+"Last-Translator: Pagou\n"
 "Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/\n"
-"Language: en_US\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"PO-Revision-Date: 2024-10-15 11:13+0000\n"
-"X-Loco-Version: 2.6.11; wp-6.6.2"
+"POT-Creation-Date: 2026-10-15T14:38:35-03:00\n"
+"PO-Revision-Date: 2026-10-15 15:00-0300\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: pagou-payments-for-woocommerce\n"
 
-#: includes/templates/pdf.php:9
-msgctxt "Account:"
-msgid "Conta:"
-msgstr "Account:"
-
-#: includes/templates/pdf.php:8
-msgctxt "Agency:"
-msgid "Agência:"
-msgstr "Agency:"
-
-#: includes/templates/pdf.php:10
-msgctxt "Assignor:"
-msgid "Cedente:"
-msgstr "Assignor:"
-
-#: includes/templates/pdf.php:15
-msgctxt "Click to copy the code and pay at your bank."
-msgid "Clique para copiar o código e pagar em seu banco."
-msgstr "Click to copy the code and pay at your bank."
-
-#. Author URI of the plugin
-msgctxt "https://pagou.com.br/"
-msgid "https://pagou.com.br/"
-msgstr "https://pagou.com.br/"
+#. Plugin Name of the plugin
+#: pagou-payments-for-woocommerce.php:3
+msgid "Pagou - Payments for WooCommerce"
+msgstr "Pagou - Payments for WooCommerce"
 
 #. Description of the plugin
-msgctxt ""
-"Integration with the Pagou payment gateway, allowing the use of PIX and "
-"Boleto as payment methods in WooCommerce."
-msgid ""
-"Integração com o gateway de pagamento Pagou, permitindo a utilização de PIX "
-"e Boleto como métodos de pagamento no WooCommerce."
-msgstr ""
-"Integration with the Pagou payment gateway, allowing the use of PIX and "
-"Boleto as payment methods in WooCommerce."
-
-#: includes/templates/pdf.php:6
-msgctxt "Issuing bank:"
-msgid "Banco emissor:"
-msgstr "Issuing bank:"
-
-#: includes/templates/pdf_loading.php:1
-msgctxt "Loading your ticket..."
-msgid "Carregando seu boleto..."
-msgstr "Loading your ticket..."
-
-#: includes/templates/pdf.php:7
-msgctxt "Number:"
-msgid "Número:"
-msgstr "Number:"
-
-#: includes/templates/pix.php:6
-msgctxt "or click below to copy the code and pay at your bank"
-msgid "ou clique abaixo para copiar o código e pagar em seu banco"
-msgstr "or click below to copy the code and pay at your bank"
-
-#: includes/functions.php:160
-msgctxt "Order and Payment Details"
-msgid "Detalhes do pedido e pagamento"
-msgstr "Order and Payment Details"
+#: pagou-payments-for-woocommerce.php:4
+msgid "Integration with the Pagou payment gateway: Pix, Boleto and credit card, with payment split, as payment methods in WooCommerce."
+msgstr "Integration with the Pagou payment gateway: Pix, Boleto and credit card, with payment split, as payment methods in WooCommerce."
 
 #. Author of the plugin
-#: pagou-payments-for-woocommerce.php:30 pagou-payments-for-woocommerce.php:32
-msgctxt "Pagou"
+#: pagou-payments-for-woocommerce.php:5
+#: includes/classes/Admin/OrderPanel.php:68
 msgid "Pagou"
 msgstr "Pagou"
 
-#. Name of the plugin
-msgctxt "Pagou - Payments for WooCommerce"
-msgid "Pagou - Pagamentos para WooCommerce"
-msgstr "Pagou - Payments for WooCommerce"
+#. Author URI of the plugin
+#: pagou-payments-for-woocommerce.php:8
+msgid "https://pagou.com.br/"
+msgstr "https://pagou.com.br/"
 
-#: includes/templates/pdf.php:3
-msgctxt "Payment via Boleto"
-msgid "Pagamento via Boleto"
-msgstr "Payment via Boleto"
+#: includes/classes/Admin/Notices.php:46
+msgid "Dispensar"
+msgstr "Dismiss"
 
-#: includes/templates/pix.php:3
-msgctxt "Payment via PIX"
-msgid "Pagamento via PIX"
-msgstr "Payment via PIX"
+#: includes/classes/Admin/Notices.php:55
+#: includes/classes/Admin/SettingsPage.php:243
+#: includes/classes/Split/Integration.php:432
+msgid "Sem permissão."
+msgstr "Permission denied."
 
-#: pagou-payments-for-woocommerce.php:32
-msgctxt ""
-"requires the <strong>Brazilian Market on WooCommerce</strong> plugin "
-"installed and active to work. Please install and activate <a href=\"https:"
-"//wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/\" "
-"target=\"_blank\">Brazilian Market on WooCommerce</a>. </p></div>"
-msgid ""
-"requer o plugin <strong>Brazilian Market on WooCommerce</strong> instalado e "
-"ativo para funcionar. Por favor, instale e ative o <a href=\"https:"
-"//wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/\" "
-"target=\"_blank\">Brazilian Market on WooCommerce</a>.</p></div>"
-msgstr ""
-"requires the <strong>Brazilian Market on WooCommerce</strong> plugin "
-"installed and active to work. Please install and activate <a href=\"https:"
-"//wordpress.org/plugins/woocommerce-extra-checkout-fields-for-brazil/\" "
-"target=\"_blank\">Brazilian Market on WooCommerce</a>. </p></div>"
+#: includes/classes/Admin/OrderPanel.php:33
+msgid "ID do Pix"
+msgstr "Pix ID"
 
-#: pagou-payments-for-woocommerce.php:30
-msgctxt ""
-"requires WooCommerce installed and active to work. Please install and "
-"activate WooCommerce."
-msgid ""
-"requer o WooCommerce instalado e ativo para funcionar. Por favor, instale e "
-"ative o WooCommerce."
-msgstr ""
-"requires WooCommerce installed and active to work. Please install and "
-"activate WooCommerce."
+#: includes/classes/Admin/OrderPanel.php:34
+msgid "ID do boleto"
+msgstr "Boleto ID"
 
-#: includes/templates/pix.php:4
-msgctxt "Scan the QR code below to make the payment or copy the PIX code."
-msgid ""
-"Escaneie o código QR abaixo para realizar o pagamento ou copie o código PIX."
-msgstr "Scan the QR code below to make the payment or copy the PIX code."
+#: includes/classes/Admin/OrderPanel.php:35
+msgid "Transação"
+msgstr "Transaction"
 
-#: includes/templates/pdf.php:16
-msgctxt "see full ticket"
-msgid "Ver boleto completo"
-msgstr "see full ticket"
+#: includes/classes/Admin/OrderPanel.php:36
+msgid "E2E (Pix)"
+msgstr "E2E (Pix)"
 
-#: includes/class/pagou_boleto.php:135
-msgctxt "Waiting for payment via Boleto."
-msgid "Aguardando pagamento via Boleto."
-msgstr "Waiting for payment via Boleto."
+#: includes/classes/Admin/OrderPanel.php:37
+msgid "ID da cobrança de cartão"
+msgstr "Card charge ID"
 
-#: includes/class/pagou_pix.php:127
-msgctxt "Waiting for payment via Pix."
+#: includes/classes/Admin/OrderPanel.php:38
+msgid "Status do cartão na Pagou"
+msgstr "Card status at Pagou"
+
+#: includes/classes/Admin/OrderPanel.php:39
+#: includes/classes/Gateway/Card.php:187
+#: includes/classes/Gateway/Card.php:275
+msgid "Parcelas"
+msgstr "Installments"
+
+#: includes/classes/Admin/OrderPanel.php:40
+msgid "Prazo da defesa de chargeback"
+msgstr "Chargeback defense deadline"
+
+#: includes/classes/Admin/OrderPanel.php:71
+msgid "Nenhuma cobrança criada para este pedido."
+msgstr "No charge created for this order."
+
+#: includes/classes/Admin/OrderPanel.php:84
+msgid "Ver a tela de pagamento do cliente"
+msgstr "View the customer payment screen"
+
+#: includes/classes/Admin/SettingsPage.php:49
+#: includes/classes/Gateway/AbstractGateway.php:83
+msgid "Conta Pagou"
+msgstr "Pagou account"
+
+#: includes/classes/Admin/SettingsPage.php:51
+msgid "Credenciais e ambiente valem para todos os meios de pagamento da Pagou (Pix, boleto e cartão)."
+msgstr "Credentials and environment apply to all Pagou payment methods (Pix, boleto and card)."
+
+#: includes/classes/Admin/SettingsPage.php:55
+msgid "Ambiente"
+msgstr "Environment"
+
+#: includes/classes/Admin/SettingsPage.php:60
+#: includes/classes/Gateway/AbstractGateway.php:130
+msgid "Produção"
+msgstr "Production"
+
+#: includes/classes/Admin/SettingsPage.php:61
+msgid "Sandbox (testes, api.pagou.cloud)"
+msgstr "Sandbox (testing, api.pagou.cloud)"
+
+#: includes/classes/Admin/SettingsPage.php:63
+msgid "No sandbox nenhuma cobrança é real. Use a chave de API da conta de sandbox."
+msgstr "No charge is real in the sandbox. Use the API key of your sandbox account."
+
+#: includes/classes/Admin/SettingsPage.php:69
+#: includes/classes/Admin/SettingsPage.php:76
+msgid "Chave de API"
+msgstr "API key"
+
+#: includes/classes/Admin/SettingsPage.php:72
+msgid "Definida pela constante PAGOU_API_KEY no wp-config.php."
+msgstr "Defined by the PAGOU_API_KEY constant in wp-config.php."
+
+#: includes/classes/Admin/SettingsPage.php:80
+msgid "Encontrada no painel da Pagou. Para tirá-la do banco de dados, defina a constante PAGOU_API_KEY no wp-config.php."
+msgstr "Found in the Pagou dashboard. To keep it out of the database, define the PAGOU_API_KEY constant in wp-config.php."
+
+#: includes/classes/Admin/SettingsPage.php:86
+msgid "Conexão"
+msgstr "Connection"
+
+#: includes/classes/Admin/SettingsPage.php:93
+msgid "URL de notificação"
+msgstr "Notification URL"
+
+#: includes/classes/Admin/SettingsPage.php:105
+msgid "Checkout"
+msgstr "Checkout"
+
+#: includes/classes/Admin/SettingsPage.php:111
+msgid "Campos brasileiros"
+msgstr "Brazilian fields"
+
+#: includes/classes/Admin/SettingsPage.php:116
+msgid "Automático: adicionar CPF/CNPJ, número e bairro quando faltarem"
+msgstr "Automatic: add CPF/CNPJ, number and neighborhood when missing"
+
+#: includes/classes/Admin/SettingsPage.php:117
+msgid "Desligado: outro plugin fornece esses campos"
+msgstr "Off: another plugin provides these fields"
+
+#: includes/classes/Admin/SettingsPage.php:119
+msgid "Com o Brazilian Market on WooCommerce ativo, o checkout clássico usa os campos dele. O checkout em blocos sempre usa os campos da Pagou."
+msgstr "With Brazilian Market on WooCommerce active, the classic checkout uses its fields. The block checkout always uses the Pagou fields."
+
+#: includes/classes/Admin/SettingsPage.php:123
+msgid "IP do cliente"
+msgstr "Customer IP"
+
+#: includes/classes/Admin/SettingsPage.php:128
+msgid "O antifraude do cartão exige o IP real do comprador. Se a loja usa Cloudflare ou outro proxy, escolha o cabeçalho correspondente."
+msgstr "The card antifraud requires the buyer's real IP address. If the store is behind Cloudflare or another proxy, choose the matching header."
+
+#: includes/classes/Admin/SettingsPage.php:144
+msgid "Diagnóstico"
+msgstr "Diagnostics"
+
+#: includes/classes/Admin/SettingsPage.php:150
+msgid "Modo debug"
+msgstr "Debug mode"
+
+#. translators: %s: link para os logs
+#: includes/classes/Admin/SettingsPage.php:156
+#, php-format
+msgid "Registrar chamadas à API e webhooks em <a href=\"%s\">WooCommerce &gt; Status &gt; Logs</a> (fonte \"pagou\"). Erros são sempre registrados."
+msgstr "Log API calls and webhooks in <a href=\"%s\">WooCommerce &gt; Status &gt; Logs</a> (source \"pagou\"). Errors are always logged."
+
+#: includes/classes/Admin/SettingsPage.php:201
+msgid "Testar conexão"
+msgstr "Test connection"
+
+#: includes/classes/Admin/SettingsPage.php:204
+msgid "Salve a chave antes de testar."
+msgstr "Save the key before testing."
+
+#: includes/classes/Admin/SettingsPage.php:227
+msgid "Enviada automaticamente em cada cobrança. Não é preciso cadastrá-la no painel da Pagou."
+msgstr "Sent automatically with each charge. There is no need to register it in the Pagou dashboard."
+
+#: includes/classes/Admin/SettingsPage.php:249
+msgid "Informe e salve a chave de API."
+msgstr "Enter and save the API key."
+
+#. translators: %s: ambiente
+#: includes/classes/Admin/SettingsPage.php:259
+#, php-format
+msgid "Conectado à Pagou (%s). Chave válida."
+msgstr "Connected to Pagou (%s). Valid key."
+
+#: includes/classes/Admin/SettingsPage.php:260
+msgid "sandbox"
+msgstr "sandbox"
+
+#: includes/classes/Admin/SettingsPage.php:260
+msgid "produção"
+msgstr "production"
+
+#: includes/classes/Admin/SettingsPage.php:267
+msgid "Chave inválida para o ambiente escolhido."
+msgstr "Invalid key for the selected environment."
+
+#. translators: %s: erro
+#: includes/classes/Admin/SettingsPage.php:273
+#, php-format
+msgid "Não foi possível conectar: %s"
+msgstr "Could not connect: %s"
+
+#: includes/classes/Api/Errors.php:25
+msgid "Nome completo"
+msgstr "Full name"
+
+#: includes/classes/Api/Errors.php:26
+msgid "CPF/CNPJ"
+msgstr "CPF/CNPJ"
+
+#: includes/classes/Api/Errors.php:27
+#: includes/classes/Api/Errors.php:28
+#: includes/classes/Checkout/Payer.php:233
+msgid "CEP"
+msgstr "Postcode"
+
+#: includes/classes/Api/Errors.php:29
+msgid "Rua"
+msgstr "Street"
+
+#: includes/classes/Api/Errors.php:30
+msgid "Cidade"
+msgstr "City"
+
+#: includes/classes/Api/Errors.php:31
+msgid "Estado"
+msgstr "State"
+
+#: includes/classes/Api/Errors.php:32
+#: includes/classes/Checkout/BrazilianFields.php:149
+#: includes/classes/Checkout/BrazilianFields.php:228
+#: includes/classes/Checkout/BrazilianFields.php:257
+#: templates/boleto.php:88
+msgid "Número"
+msgstr "Number"
+
+#: includes/classes/Api/Errors.php:33
+#: includes/classes/Checkout/BrazilianFields.php:165
+#: includes/classes/Checkout/BrazilianFields.php:234
+#: includes/classes/Checkout/BrazilianFields.php:261
+msgid "Bairro"
+msgstr "Neighborhood"
+
+#: includes/classes/Api/Errors.php:34
+msgid "E-mail"
+msgstr "Email"
+
+#: includes/classes/Api/Errors.php:35
+msgid "Telefone"
+msgstr "Phone"
+
+#: includes/classes/Api/Errors.php:46
+msgid "Pagamento com cartão indisponível nesta loja no momento. Escolha outro meio de pagamento."
+msgstr "Card payment is unavailable in this store right now. Please choose another payment method."
+
+#: includes/classes/Api/Errors.php:47
+msgid "O cartão está vencido. Use outro cartão."
+msgstr "The card has expired. Please use another card."
+
+#: includes/classes/Api/Errors.php:48
+msgid "O CPF/CNPJ informado não confere. Revise o documento."
+msgstr "The CPF/CNPJ provided does not match. Please check the document."
+
+#: includes/classes/Api/Errors.php:49
+msgid "Este cartão não aceita essa quantidade de parcelas. Escolha menos parcelas."
+msgstr "This card does not accept this number of installments. Please choose fewer installments."
+
+#: includes/classes/Api/Errors.php:68
+msgid "Não foi possível processar o pagamento agora. A loja já foi avisada; tente novamente em instantes ou escolha outro meio de pagamento."
+msgstr "We could not process the payment right now. The store has been notified; please try again shortly or choose another payment method."
+
+#. translators: %s: lista de campos
+#: includes/classes/Api/Errors.php:76
+#, php-format
+msgid "Revise os seguintes dados: %s."
+msgstr "Please review the following data: %s."
+
+#: includes/classes/Api/Errors.php:85
+msgid "Não foi possível processar o pagamento. Tente novamente em instantes."
+msgstr "We could not process the payment. Please try again shortly."
+
+#: includes/classes/Api/Errors.php:111
+msgid "e"
+msgstr "and"
+
+#. translators: %s: valor
+#: includes/classes/Card/Installments.php:162
+#: includes/classes/Gateway/Card.php:189
+#, php-format
+msgid "À vista, %s"
+msgstr "Single payment, %s"
+
+#. translators: 1: parcelas, 2: valor da parcela
+#: includes/classes/Card/Installments.php:167
+#: includes/classes/Gateway/Card.php:191
+#, php-format
+msgid "%1$dx de %2$s sem juros"
+msgstr "%1$dx of %2$s interest free"
+
+#. translators: 1: parcelas, 2: valor da parcela, 3: total
+#: includes/classes/Card/Installments.php:172
+#: includes/classes/Gateway/Card.php:193
+#, php-format
+msgid "%1$dx de %2$s (total %3$s)"
+msgstr "%1$dx of %2$s (total %3$s)"
+
+#: includes/classes/Checkout/BrazilianFields.php:130
+#: includes/classes/Checkout/BrazilianFields.php:215
+#: includes/classes/Checkout/BrazilianFields.php:253
+msgid "CPF ou CNPJ"
+msgstr "CPF or CNPJ"
+
+#: includes/classes/Checkout/BrazilianFields.php:131
+msgid "CPF ou CNPJ (opcional)"
+msgstr "CPF or CNPJ (optional)"
+
+#: includes/classes/Checkout/BrazilianFields.php:150
+msgid "Número (opcional)"
+msgstr "Number (optional)"
+
+#: includes/classes/Checkout/BrazilianFields.php:166
+msgid "Bairro (opcional)"
+msgstr "Neighborhood (optional)"
+
+#: includes/classes/Checkout/BrazilianFields.php:198
+msgid "Informe um CPF ou CNPJ válido."
+msgstr "Enter a valid CPF or CNPJ."
+
+#: includes/classes/Checkout/BrazilianFields.php:289
+msgid "Informe um CPF ou CNPJ válido para pagar com a Pagou."
+msgstr "Enter a valid CPF or CNPJ to pay with Pagou."
+
+#: includes/classes/Checkout/BrazilianFields.php:296
+msgid "Informe o número do endereço."
+msgstr "Enter the address number."
+
+#: includes/classes/Checkout/BrazilianFields.php:299
+msgid "Informe o bairro."
+msgstr "Enter the neighborhood."
+
+#: includes/classes/Checkout/Payer.php:223
+msgid "CPF ou CNPJ válido"
+msgstr "valid CPF or CNPJ"
+
+#: includes/classes/Checkout/Payer.php:227
+msgid "nome completo"
+msgstr "full name"
+
+#: includes/classes/Checkout/Payer.php:236
+msgid "endereço"
+msgstr "address"
+
+#: includes/classes/Checkout/Payer.php:239
+msgid "bairro"
+msgstr "neighborhood"
+
+#: includes/classes/Checkout/Payer.php:242
+msgid "cidade"
+msgstr "city"
+
+#: includes/classes/Checkout/Payer.php:245
+msgid "estado"
+msgstr "state"
+
+#: includes/classes/Checkout/Payer.php:251
+msgid "e-mail"
+msgstr "email"
+
+#: includes/classes/Checkout/Payer.php:255
+msgid "telefone com DDD"
+msgstr "phone with area code"
+
+#: includes/classes/Cron/CardSync.php:68
+msgid "Pagamento com cartão confirmado pela conciliação (consulta à Pagou)."
+msgstr "Card payment confirmed by reconciliation (Pagou query)."
+
+#: includes/classes/Cron/CardSync.php:72
+msgid "Pagou: a conferência mostrou que o pagamento com cartão não foi aprovado. O cliente pode tentar de novo pela página do pedido."
+msgstr "Pagou: the check showed that the card payment was not approved. The customer can try again from the order page."
+
+#. translators: 1: número do pedido, 2: nome da loja
+#: includes/classes/Cron/CardSync.php:106
+#: includes/classes/Gateway/Card.php:433
+#, php-format
+msgid "Pedido %1$s - %2$s"
+msgstr "Order %1$s - %2$s"
+
+#: includes/classes/Cron/Reconciliation.php:68
+msgid "A cada 15 minutos (Pagou)"
+msgstr "Every 15 minutes (Pagou)"
+
+#: includes/classes/Cron/Reconciliation.php:157
+msgid "Pagamento confirmado pela conciliação automática (consulta à Pagou)."
+msgstr "Payment confirmed by automatic reconciliation (Pagou query)."
+
+#. translators: %s: nome do meio de pagamento
+#: includes/classes/Discounts.php:117
+#: includes/classes/Discounts.php:286
+#, php-format
+msgid "Desconto %s"
+msgstr "Discount %s"
+
+#. translators: %s: percentual de desconto
+#: includes/classes/Discounts.php:193
+#, php-format
+msgid "%s%% de desconto"
+msgstr "%s%% off"
+
+#. translators: %s: valor do desconto já formatado como moeda
+#: includes/classes/Discounts.php:197
+#, php-format
+msgid "%s de desconto"
+msgstr "%s off"
+
+#. translators: %s: nome do meio de pagamento, ex.: PIX
+#: includes/classes/Discounts.php:411
+#, php-format
+msgid "Desconto no %s"
+msgstr "%s discount"
+
+#. translators: %s: nome do meio de pagamento, ex.: PIX
+#: includes/classes/Discounts.php:414
+#, php-format
+msgid "Ofereça um desconto para quem pagar com %s. O total já sai com o desconto aplicado, inclusive no valor cobrado pela Pagou."
+msgstr "Offer a discount to customers who pay with %s. The total already includes the discount, including the amount charged by Pagou."
+
+#: includes/classes/Discounts.php:417
+msgid "Valor do desconto"
+msgstr "Discount amount"
+
+#: includes/classes/Discounts.php:419
+msgid "Desconto concedido a quem escolher este meio de pagamento. Use 0 para não oferecer desconto. O desconto incide sobre o subtotal dos produtos."
+msgstr "Discount given to customers who choose this payment method. Use 0 for no discount. The discount applies to the products subtotal."
+
+#: includes/classes/Discounts.php:425
+msgid "Tipo de desconto"
+msgstr "Discount type"
+
+#: includes/classes/Discounts.php:427
+msgid "Percentual sobre o subtotal ou valor fixo em reais."
+msgstr "Percentage of the subtotal or fixed amount in reais."
+
+#: includes/classes/Discounts.php:431
+#: includes/classes/Split/Integration.php:220
+msgid "Percentual (%)"
+msgstr "Percentage (%)"
+
+#: includes/classes/Discounts.php:432
+msgid "Valor fixo (R$)"
+msgstr "Fixed amount (R$)"
+
+#: includes/classes/Discounts.php:436
+msgid "Exibir desconto no checkout"
+msgstr "Show discount at checkout"
+
+#: includes/classes/Discounts.php:437
+msgid "Mostrar o desconto ao lado do nome do meio de pagamento"
+msgstr "Show the discount next to the payment method name"
+
+#: includes/classes/Discounts.php:439
+msgid "Exibe, por exemplo, \"PIX (5% de desconto)\" na lista de pagamentos."
+msgstr "Shows, for example, \"PIX (5% off)\" in the payment list."
+
+#: includes/classes/Emails.php:77
+msgid "PAGUE COM PIX"
+msgstr "PAY WITH PIX"
+
+#: includes/classes/Emails.php:78
+msgid "PAGUE SEU BOLETO"
+msgstr "PAY YOUR BOLETO"
+
+#. translators: %s: valor do pedido
+#: includes/classes/Emails.php:85
+#, php-format
+msgid "Valor: %s"
+msgstr "Amount: %s"
+
+#: includes/classes/Emails.php:89
+msgid "Copie o código abaixo e pague no app do seu banco:"
+msgstr "Copy the code below and pay in your banking app:"
+
+#: includes/classes/Emails.php:90
+msgid "Linha digitável:"
+msgstr "Digitable line:"
+
+#: includes/classes/Emails.php:92
+msgid "Ver o pedido:"
+msgstr "View the order:"
+
+#: includes/classes/Emails.php:98
+msgid "Pague com Pix para concluir"
+msgstr "Pay with Pix to complete your order"
+
+#: includes/classes/Emails.php:99
+msgid "Pague seu boleto para concluir"
+msgstr "Pay your boleto to complete your order"
+
+#: includes/classes/Emails.php:102
+msgid "Copie o código abaixo e pague no app do seu banco. A confirmação é automática."
+msgstr "Copy the code below and pay in your banking app. Confirmation is automatic."
+
+#: includes/classes/Emails.php:103
+msgid "Use a linha digitável abaixo em qualquer banco ou aplicativo."
+msgstr "Use the digitable line below at any bank or banking app."
+
+#: includes/classes/Emails.php:108
+msgid "Pagamento pendente"
+msgstr "Payment pending"
+
+#: includes/classes/Emails.php:120
+msgid "Pix copia e cola"
+msgstr "Pix copy and paste"
+
+#: includes/classes/Emails.php:121
+msgid "Linha digitável"
+msgstr "Digitable line"
+
+#: includes/classes/Emails.php:131
+#: templates/boleto.php:65
+msgid "Abrir boleto em PDF"
+msgstr "Open boleto PDF"
+
+#: includes/classes/Emails.php:140
+msgid "Abrir a tela de pagamento com o QR Code"
+msgstr "Open the payment screen with the QR code"
+
+#: includes/classes/Emails.php:141
+msgid "Abrir a tela do boleto"
+msgstr "Open the boleto screen"
+
+#: includes/classes/Gateway/AbstractGateway.php:76
+msgid "Ativar/Desativar"
+msgstr "Enable/Disable"
+
+#. translators: %s: nome do meio de pagamento
+#: includes/classes/Gateway/AbstractGateway.php:78
+#, php-format
+msgid "Ativar %s pela Pagou"
+msgstr "Enable %s by Pagou"
+
+#: includes/classes/Gateway/AbstractGateway.php:88
+msgid "Título"
+msgstr "Title"
+
+#: includes/classes/Gateway/AbstractGateway.php:90
+msgid "Nome do meio de pagamento exibido ao cliente no checkout."
+msgstr "Payment method name shown to the customer at checkout."
+
+#: includes/classes/Gateway/AbstractGateway.php:95
+msgid "Descrição"
+msgstr "Description"
+
+#: includes/classes/Gateway/AbstractGateway.php:97
+msgid "Texto exibido quando o cliente seleciona este meio de pagamento."
+msgstr "Text shown when the customer selects this payment method."
+
+#. translators: %s: link para a aba de configurações da Pagou
+#: includes/classes/Gateway/AbstractGateway.php:122
+#, php-format
+msgid "<strong>Chave de API não configurada.</strong> Informe a chave em <a href=\"%s\">WooCommerce &gt; Configurações &gt; Pagou</a>; ela vale para todos os meios de pagamento."
+msgstr "<strong>API key not configured.</strong> Enter the key in <a href=\"%s\">WooCommerce &gt; Settings &gt; Pagou</a>; it applies to all payment methods."
+
+#. translators: 1: ambiente, 2: link
+#: includes/classes/Gateway/AbstractGateway.php:129
+#, php-format
+msgid "Ambiente: <strong>%1$s</strong>. Chave de API, ambiente e logs ficam em <a href=\"%2$s\">WooCommerce &gt; Configurações &gt; Pagou</a>."
+msgstr "Environment: <strong>%1$s</strong>. API key, environment and logs are in <a href=\"%2$s\">WooCommerce &gt; Settings &gt; Pagou</a>."
+
+#: includes/classes/Gateway/AbstractGateway.php:130
+msgid "Sandbox (testes)"
+msgstr "Sandbox (testing)"
+
+#. translators: 1: meio de pagamento, 2: lista de campos
+#: includes/classes/Gateway/AbstractGateway.php:187
+#, php-format
+msgid "Para pagar com %1$s, preencha: %2$s."
+msgstr "To pay with %1$s, please fill in: %2$s."
+
+#: includes/classes/Gateway/AbstractGateway.php:218
+msgid "A Pagou recusou a chave de API configurada (chave inválida para o ambiente escolhido). Os pagamentos estão falhando até a chave ser corrigida."
+msgstr "Pagou rejected the configured API key (invalid key for the selected environment). Payments will fail until the key is fixed."
+
+#. translators: 1: meio de pagamento, 2: erro
+#: includes/classes/Gateway/AbstractGateway.php:224
+#, php-format
+msgid "Pagou: falha ao criar a cobrança de %1$s (%2$s)."
+msgstr "Pagou: failed to create the %1$s charge (%2$s)."
+
+#: includes/classes/Gateway/AbstractGateway.php:268
+msgid "Pagamento confirmado. Obrigado pela compra!"
+msgstr "Payment confirmed. Thank you for your purchase!"
+
+#: includes/classes/Gateway/AbstractGateway.php:278
+msgid "Recebemos seu pedido. Para concluir, faça o pagamento abaixo."
+msgstr "We received your order. To complete it, make the payment below."
+
+#: includes/classes/Gateway/Boleto.php:29
+msgid "Boleto bancário registrado pela Pagou, com Pix embutido quando disponível."
+msgstr "Bank slip (boleto) registered by Pagou, with embedded Pix when available."
+
+#: includes/classes/Gateway/Boleto.php:39
+msgid "Boleto Bancário"
+msgstr "Boleto Bancário"
+
+#: includes/classes/Gateway/Boleto.php:43
+msgid "Ao finalizar a compra, o boleto é gerado para pagamento em qualquer banco ou aplicativo."
+msgstr "After checkout, the boleto is generated for payment at any bank or banking app."
+
+#: includes/classes/Gateway/Boleto.php:49
+msgid "Prazo para vencimento (dias)"
+msgstr "Days until due date"
+
+#: includes/classes/Gateway/Boleto.php:51
+msgid "Dias até o vencimento do boleto, contados da compra."
+msgstr "Days until the boleto due date, counted from the purchase."
+
+#: includes/classes/Gateway/Boleto.php:57
+msgid "Multa por atraso (%)"
+msgstr "Late fee (%)"
+
+#: includes/classes/Gateway/Boleto.php:59
+msgid "Percentual de multa cobrado após o vencimento."
+msgstr "Fee percentage charged after the due date."
+
+#: includes/classes/Gateway/Boleto.php:68
+msgid "Juros por atraso (% ao dia)"
+msgstr "Late interest (% per day)"
+
+#: includes/classes/Gateway/Boleto.php:70
+msgid "Percentual de juros por dia de atraso."
+msgstr "Interest percentage per day of delay."
+
+#: includes/classes/Gateway/Boleto.php:85
+#: includes/classes/Gateway/Card.php:361
+#: includes/classes/Gateway/Pix.php:73
+msgid "Pedido não encontrado."
+msgstr "Order not found."
+
+#: includes/classes/Gateway/Boleto.php:94
+#: includes/classes/Gateway/Boleto.php:131
+msgid "Aguardando pagamento do boleto."
+msgstr "Awaiting boleto payment."
+
+#. translators: %s: número do pedido
+#: includes/classes/Gateway/Boleto.php:106
+#: includes/classes/Gateway/Pix.php:94
+#, php-format
+msgid "Pedido %s"
+msgstr "Order %s"
+
+#: includes/classes/Gateway/Boleto.php:126
+msgid "Não foi possível gerar o boleto. Tente novamente."
+msgstr "We could not generate the boleto. Please try again."
+
+#: includes/classes/Gateway/Boleto.php:209
+msgid "Pagamento do boleto confirmado"
+msgstr "Boleto payment confirmed"
+
+#: includes/classes/Gateway/Boleto.php:240
+msgid "Recebemos seu pedido. Para concluir, pague o boleto abaixo."
+msgstr "We received your order. To complete it, pay the boleto below."
+
+#: includes/classes/Gateway/Boleto.php:254
+msgid "Não encontramos o boleto deste pedido para estornar."
+msgstr "We could not find the boleto for this order to refund."
+
+#: includes/classes/Gateway/Boleto.php:263
+#: includes/classes/Gateway/Card.php:908
+#: includes/classes/Gateway/Pix.php:241
+msgid "Estorno pelo WooCommerce."
+msgstr "Refund from WooCommerce."
+
+#. translators: %s: erro da API
+#: includes/classes/Gateway/Boleto.php:269
+#: includes/classes/Gateway/Card.php:914
+#: includes/classes/Gateway/Pix.php:247
+#, php-format
+msgid "A Pagou recusou o estorno: %s"
+msgstr "Pagou rejected the refund: %s"
+
+#. translators: %s: valor
+#: includes/classes/Gateway/Boleto.php:275
+#, php-format
+msgid "Estorno do boleto solicitado à Pagou: %s."
+msgstr "Boleto refund requested from Pagou: %s."
+
+#: includes/classes/Gateway/Card.php:54
+#: includes/classes/Gateway/Card.php:71
+#: includes/classes/Split/Integration.php:143
+msgid "Cartão de crédito"
+msgstr "Credit card"
+
+#: includes/classes/Gateway/Card.php:55
+msgid "Cartão de crédito à vista ou parcelado pela Pagou, com opção de salvar o cartão."
+msgstr "Credit card in a single payment or installments by Pagou, with the option to save the card."
+
+#: includes/classes/Gateway/Card.php:75
+msgid "Pague com cartão de crédito à vista ou parcelado."
+msgstr "Pay with credit card in a single payment or installments."
+
+#: includes/classes/Gateway/Card.php:86
+msgid "Parcelamento"
+msgstr "Installments"
+
+#: includes/classes/Gateway/Card.php:88
+msgid "A Pagou repassa o valor de cada parcela conforme o seu plano. Os juros configurados aqui são cobrados do comprador e entram no pedido como \"Juros do parcelamento\"."
+msgstr "Pagou pays out each installment according to your plan. The interest configured here is charged to the buyer and added to the order as \"Installment interest\"."
+
+#: includes/classes/Gateway/Card.php:91
+msgid "Parcelas no máximo"
+msgstr "Maximum installments"
+
+#: includes/classes/Gateway/Card.php:97
+msgid "Valor mínimo da parcela (R$)"
+msgstr "Minimum installment amount (R$)"
+
+#: includes/classes/Gateway/Card.php:100
+msgid "Parcelas abaixo desse valor não são oferecidas."
+msgstr "Installments below this amount are not offered."
+
+#: includes/classes/Gateway/Card.php:104
+msgid "Sem juros até"
+msgstr "Interest free up to"
+
+#: includes/classes/Gateway/Card.php:108
+msgid "Até quantas parcelas o comprador não paga juros. Use 1 para cobrar juros em todo parcelamento."
+msgstr "Up to how many installments the buyer pays no interest. Use 1 to charge interest on every installment plan."
+
+#: includes/classes/Gateway/Card.php:112
+msgid "Juros ao mês (%)"
+msgstr "Monthly interest (%)"
+
+#: includes/classes/Gateway/Card.php:115
+msgid "Taxa mensal aplicada acima das parcelas sem juros (tabela Price). Use 0 para nunca cobrar juros."
+msgstr "Monthly rate applied above the interest free installments (Price table). Use 0 to never charge interest."
+
+#: includes/classes/Gateway/Card.php:119
+msgid "Opções"
+msgstr "Options"
+
+#: includes/classes/Gateway/Card.php:123
+msgid "Cartão salvo"
+msgstr "Saved card"
+
+#: includes/classes/Gateway/Card.php:124
+msgid "Permitir que clientes com conta salvem o cartão para as próximas compras"
+msgstr "Allow customers with an account to save their card for future purchases"
+
+#: includes/classes/Gateway/Card.php:129
+msgid "Pedido com chargeback"
+msgstr "Order with chargeback"
+
+#: includes/classes/Gateway/Card.php:133
+msgid "Mudar para \"Aguardando\""
+msgstr "Change to \"On hold\""
+
+#: includes/classes/Gateway/Card.php:134
+msgid "Só registrar nota e avisar no painel"
+msgstr "Only add a note and warn in the dashboard"
+
+#: includes/classes/Gateway/Card.php:135
+msgid "Mudar para \"Reembolsado\""
+msgstr "Change to \"Refunded\""
+
+#: includes/classes/Gateway/Card.php:137
+msgid "O que fazer quando o comprador contesta a compra com o banco."
+msgstr "What to do when the buyer disputes the purchase with the bank."
+
+#: includes/classes/Gateway/Card.php:181
+msgid "Pagamento com cartão indisponível no momento. Recarregue a página ou escolha outro meio de pagamento."
+msgstr "Card payment is unavailable right now. Reload the page or choose another payment method."
+
+#: includes/classes/Gateway/Card.php:182
+msgid "Confira os dados do cartão e tente novamente."
+msgstr "Check the card details and try again."
+
+#: includes/classes/Gateway/Card.php:183
+#: includes/classes/Gateway/Card.php:258
+msgid "Número do cartão"
+msgstr "Card number"
+
+#: includes/classes/Gateway/Card.php:184
+#: includes/classes/Gateway/Card.php:262
+msgid "Nome impresso no cartão"
+msgstr "Name on card"
+
+#: includes/classes/Gateway/Card.php:185
+msgid "Validade (MM/AA)"
+msgstr "Expiry (MM/YY)"
+
+#: includes/classes/Gateway/Card.php:186
+#: includes/classes/Gateway/Card.php:270
+msgid "CVV"
+msgstr "CVV"
+
+#: includes/classes/Gateway/Card.php:266
+msgid "Validade"
+msgstr "Expiry"
+
+#: includes/classes/Gateway/Card.php:314
+msgid "Não foi possível validar os dados do cartão. Recarregue a página e tente novamente."
+msgstr "We could not validate the card details. Reload the page and try again."
+
+#: includes/classes/Gateway/Card.php:318
+msgid "Informe o nome impresso no cartão."
+msgstr "Enter the name printed on the card."
+
+#: includes/classes/Gateway/Card.php:322
+msgid "A validade do cartão é inválida ou já passou."
+msgstr "The card expiry date is invalid or has passed."
+
+#: includes/classes/Gateway/Card.php:400
+msgid "Já estamos processando o pagamento deste pedido. Aguarde alguns segundos."
+msgstr "We are already processing the payment for this order. Please wait a few seconds."
+
+#: includes/classes/Gateway/Card.php:420
+msgid "Essa quantidade de parcelas não está disponível para este valor."
+msgstr "This number of installments is not available for this amount."
+
+#: includes/classes/Gateway/Card.php:470
+msgid "O pagamento não foi aprovado. Confira os dados ou use outro cartão."
+msgstr "The payment was not approved. Check the details or use another card."
+
+#: includes/classes/Gateway/Card.php:475
+msgid "Pagamento com cartão aprovado (Pagou)."
+msgstr "Card payment approved (Pagou)."
+
+#. translators: %s: motivo
+#: includes/classes/Gateway/Card.php:483
+#, php-format
+msgid "Pagou: cartão recusado (%s)."
+msgstr "Pagou: card declined (%s)."
+
+#: includes/classes/Gateway/Card.php:484
+msgid "sem motivo informado"
+msgstr "no reason given"
+
+#: includes/classes/Gateway/Card.php:487
+msgid "O pagamento não foi aprovado pelo banco emissor. Confira os dados ou use outro cartão."
+msgstr "The payment was not approved by the card issuer. Check the details or use another card."
+
+#: includes/classes/Gateway/Card.php:491
+msgid "O pagamento foi cancelado. Tente novamente."
+msgstr "The payment was canceled. Please try again."
+
+#. translators: %s: erro
+#: includes/classes/Gateway/Card.php:526
+#, php-format
+msgid "Pagou: resultado do cartão incerto (%s). O pedido será conferido automaticamente na Pagou; não cobre de novo antes disso."
+msgstr "Pagou: uncertain card result (%s). The order will be checked automatically with Pagou; do not charge again before that."
+
+#: includes/classes/Gateway/Card.php:570
+msgid "Pagou: cartão autorizado, aguardando a captura."
+msgstr "Pagou: card authorized, awaiting capture."
+
+#: includes/classes/Gateway/Card.php:575
+msgid "Pagou: pagamento com cartão em análise."
+msgstr "Pagou: card payment under review."
+
+#: includes/classes/Gateway/Card.php:585
+msgid "Estorno do cartão confirmado pela Pagou."
+msgstr "Card refund confirmed by Pagou."
+
+#: includes/classes/Gateway/Card.php:621
+msgid "Pagou: o comprador contestou esta compra com o banco (chargeback). Envie a defesa pelo painel da Pagou dentro do prazo."
+msgstr "Pagou: the buyer disputed this purchase with the bank (chargeback). Submit the defense in the Pagou dashboard before the deadline."
+
+#. translators: 1: link do pedido, 2: número do pedido
+#: includes/classes/Gateway/Card.php:635
+#, php-format
+msgid "Chargeback no <a href=\"%1$s\">pedido #%2$s</a>. Envie a defesa pelo painel da Pagou dentro do prazo."
+msgstr "Chargeback on <a href=\"%1$s\">order #%2$s</a>. Submit the defense in the Pagou dashboard before the deadline."
+
+#: includes/classes/Gateway/Card.php:693
+msgid "Juros do parcelamento"
+msgstr "Installment interest"
+
+#: includes/classes/Gateway/Card.php:711
+msgid "Muitas tentativas recusadas neste pedido. Use outro meio de pagamento ou fale com a loja."
+msgstr "Too many declined attempts on this order. Use another payment method or contact the store."
+
+#: includes/classes/Gateway/Card.php:716
+msgid "Muitas tentativas recusadas. Aguarde uma hora ou use outro meio de pagamento."
+msgstr "Too many declined attempts. Wait one hour or use another payment method."
+
+#: includes/classes/Gateway/Card.php:808
+msgid "Para salvar um cartão, complete seus dados de cobrança (com CPF/CNPJ, telefone e endereço) ou salve o cartão durante uma compra."
+msgstr "To save a card, complete your billing details (with CPF/CNPJ, phone and address) or save the card during a purchase."
+
+#: includes/classes/Gateway/Card.php:820
+msgid "Não foi possível salvar o cartão."
+msgstr "We could not save the card."
+
+#: includes/classes/Gateway/Card.php:897
+msgid "Não encontramos a cobrança de cartão deste pedido."
+msgstr "We could not find the card charge for this order."
+
+#: includes/classes/Gateway/Card.php:903
+msgid "O cartão aceita apenas estorno do valor total. Para devolver parte do valor, combine com o cliente outra forma (Pix, por exemplo)."
+msgstr "Card payments only accept full refunds. To return part of the amount, agree on another method with the customer (Pix, for example)."
+
+#: includes/classes/Gateway/Card.php:918
+msgid "Estorno integral do cartão solicitado à Pagou."
+msgstr "Full card refund requested from Pagou."
+
+#: includes/classes/Gateway/Card.php:940
+msgid "Pagamento com cartão aprovado"
+msgstr "Card payment approved"
+
+#: includes/classes/Gateway/Card.php:952
+msgid "Recebemos seu pedido. Estamos confirmando o pagamento com o cartão."
+msgstr "We received your order. We are confirming the card payment."
+
+#: includes/classes/Gateway/Pix.php:29
+msgid "Pix com QR Code e copia e cola, confirmado automaticamente pela Pagou."
+msgstr "Pix with QR code and copy and paste, confirmed automatically by Pagou."
+
+#: includes/classes/Gateway/Pix.php:39
+msgid "Pix Instantâneo"
+msgstr "Instant Pix"
+
+#: includes/classes/Gateway/Pix.php:43
+msgid "Ao finalizar a compra, geramos o código Pix para pagamento. O pagamento é identificado automaticamente, sem precisar enviar comprovante."
+msgstr "After checkout, we generate the Pix code for payment. The payment is identified automatically, with no need to send a receipt."
+
+#: includes/classes/Gateway/Pix.php:49
+msgid "Tempo para pagamento (em segundos)"
+msgstr "Time to pay (in seconds)"
+
+#: includes/classes/Gateway/Pix.php:51
+msgid "Validade do código Pix. Padrão: 3600 (1 hora)."
+msgstr "Pix code validity. Default: 3600 (1 hour)."
+
+#: includes/classes/Gateway/Pix.php:83
+#: includes/classes/Gateway/Pix.php:110
 msgid "Aguardando pagamento via Pix."
-msgstr "Waiting for payment via Pix."
+msgstr "Awaiting Pix payment."
+
+#: includes/classes/Gateway/Pix.php:105
+msgid "Não foi possível gerar o Pix. Tente novamente."
+msgstr "We could not generate the Pix. Please try again."
+
+#: includes/classes/Gateway/Pix.php:185
+msgid "Pagamento via Pix confirmado"
+msgstr "Pix payment confirmed"
+
+#: includes/classes/Gateway/Pix.php:198
+msgid "Não encontramos o código Pix deste pedido. Fale com a loja."
+msgstr "We could not find the Pix code for this order. Please contact the store."
+
+#: includes/classes/Gateway/Pix.php:215
+msgid "Recebemos seu pedido. Para concluir, faça o pagamento do Pix abaixo."
+msgstr "We received your order. To complete it, pay the Pix below."
+
+#: includes/classes/Gateway/Pix.php:231
+msgid "Não encontramos o Pix deste pedido para estornar."
+msgstr "We could not find the Pix for this order to refund."
+
+#. translators: %s: valor
+#: includes/classes/Gateway/Pix.php:253
+#, php-format
+msgid "Estorno do Pix solicitado à Pagou: %s. A devolução é confirmada pela Pagou em seguida."
+msgstr "Pix refund requested from Pagou: %s. Pagou will confirm the return shortly."
+
+#. translators: 1: origem, 2: valor recebido, 3: valor esperado
+#: includes/classes/Order/Payments.php:62
+#, php-format
+msgid "%1$s: pagamento recebido com valor menor que o total do pedido (recebido %2$s, esperado %3$s). Confira manualmente."
+msgstr "%1$s: payment received for less than the order total (received %2$s, expected %3$s). Please check manually."
+
+#. translators: %s: valor pago
+#: includes/classes/Order/Payments.php:82
+#, php-format
+msgid "Valor pago com acréscimo de multa/juros: %s."
+msgstr "Amount paid including late fee/interest: %s."
+
+#. translators: 1: origem, 2: valor
+#: includes/classes/Order/Payments.php:125
+#, php-format
+msgid "%1$s Valor: %2$s."
+msgstr "%1$s Amount: %2$s."
+
+#: includes/classes/Order/Payments.php:170
+msgid "(ignorado: o pedido já está pago)"
+msgstr "(ignored: the order is already paid)"
+
+#: includes/classes/Plugin.php:83
+msgid "requer o WooCommerce instalado e ativo."
+msgstr "requires WooCommerce to be installed and active."
+
+#: includes/classes/Plugin.php:120
+msgid "Configurações"
+msgstr "Settings"
+
+#: includes/classes/Plugin.php:162
+msgid "Código copiado"
+msgstr "Code copied"
+
+#: includes/classes/Plugin.php:163
+msgid "Não foi possível copiar"
+msgstr "Could not copy"
+
+#: includes/classes/Plugin.php:164
+msgid "Código expirado"
+msgstr "Code expired"
+
+#: includes/classes/Plugin.php:165
+msgid "Pagamento confirmado. Atualizando..."
+msgstr "Payment confirmed. Updating..."
+
+#: includes/classes/Plugin.php:166
+#: templates/pix.php:55
+msgid "QR Code para pagamento via Pix"
+msgstr "QR code for Pix payment"
+
+#: includes/classes/Settings.php:174
+msgid "Conexão direta (REMOTE_ADDR)"
+msgstr "Direct connection (REMOTE_ADDR)"
+
+#: includes/classes/Settings.php:175
+msgid "Cloudflare (CF-Connecting-IP)"
+msgstr "Cloudflare (CF-Connecting-IP)"
+
+#: includes/classes/Settings.php:176
+msgid "Proxy reverso (X-Real-IP)"
+msgstr "Reverse proxy (X-Real-IP)"
+
+#: includes/classes/Settings.php:177
+msgid "Proxy ou balanceador (X-Forwarded-For)"
+msgstr "Proxy or load balancer (X-Forwarded-For)"
+
+#: includes/classes/Split/Calculator.php:110
+msgid "O pedido tinha mais de 10 recebedores; foram mantidos os 10 de maior valor."
+msgstr "The order had more than 10 recipients; the 10 with the highest amounts were kept."
+
+#: includes/classes/Split/Calculator.php:118
+msgid "As regras de split somam o valor inteiro do pedido (ou mais) e não sobra margem para as tarifas. O pedido foi cobrado sem split."
+msgstr "The split rules add up to the whole order amount (or more), leaving no margin for fees. The order was charged without split."
+
+#. translators: %s: erro da Pagou
+#: includes/classes/Split/Integration.php:88
+#, php-format
+msgid "Pagou (split): a divisão do pagamento foi recusada (%s). A cobrança foi criada sem split; o valor inteiro fica na conta da loja e o repasse aos recebedores precisa ser feito manualmente."
+msgstr "Pagou (split): the payment split was rejected (%s). The charge was created without split; the full amount stays in the store account and recipients must be paid manually."
+
+#. translators: 1: link do pedido, 2: número do pedido, 3: erro
+#: includes/classes/Split/Integration.php:98
+#, php-format
+msgid "O split foi recusado no <a href=\"%1$s\">pedido #%2$s</a> (%3$s). A venda foi concluída sem split. Confira os recebedores autorizados em Configurações &gt; Split no painel da Pagou."
+msgstr "The split was rejected on <a href=\"%1$s\">order #%2$s</a> (%3$s). The sale was completed without split. Check the authorized recipients in Settings &gt; Split in the Pagou dashboard."
+
+#: includes/classes/Split/Integration.php:122
+msgid "Split de pagamento"
+msgstr "Payment split"
+
+#: includes/classes/Split/Integration.php:124
+msgid "Divide automaticamente cada venda com outras contas Pagou (sócios, parceiros, fornecedores). A sua conta precisa estar aprovada para split pela Pagou e cada recebedor precisa estar autorizado no painel da Pagou, em Configurações &gt; Split. Se a Pagou recusar o split de uma venda, ela é cobrada sem split e você recebe um aviso aqui no painel."
+msgstr "Automatically splits each sale with other Pagou accounts (partners, affiliates, suppliers). Your account must be approved for split by Pagou and each recipient must be authorized in the Pagou dashboard, under Settings &gt; Split. If Pagou rejects the split of a sale, it is charged without split and you get a warning here in the dashboard."
+
+#: includes/classes/Split/Integration.php:128
+msgid "Ativar split"
+msgstr "Enable split"
+
+#: includes/classes/Split/Integration.php:132
+msgid "Aplicar as regras de split nas cobranças"
+msgstr "Apply the split rules to charges"
+
+#: includes/classes/Split/Integration.php:135
+msgid "Meios de pagamento"
+msgstr "Payment methods"
+
+#: includes/classes/Split/Integration.php:142
+msgid "Boleto"
+msgstr "Boleto"
+
+#: includes/classes/Split/Integration.php:147
+msgid "Percentual calculado sobre"
+msgstr "Percentage calculated over"
+
+#: includes/classes/Split/Integration.php:152
+msgid "Somente os produtos (sem frete)"
+msgstr "Products only (no shipping)"
+
+#: includes/classes/Split/Integration.php:153
+msgid "O pedido inteiro (produtos e frete)"
+msgstr "The whole order (products and shipping)"
+
+#: includes/classes/Split/Integration.php:155
+msgid "Vale para as regras abaixo. Juros do parcelamento ficam sempre com a loja."
+msgstr "Applies to the rules below. Installment interest always stays with the store."
+
+#: includes/classes/Split/Integration.php:158
+msgid "Recebedores (regra geral)"
+msgstr "Recipients (global rule)"
+
+#: includes/classes/Split/Integration.php:161
+msgid "Valor fixo: uma vez por pedido. Cada produto pode usar esta regra, ter regra própria ou ficar fora do split (aba \"Split Pagou\" do produto)."
+msgstr "Fixed amount: once per order. Each product can use this rule, have its own rule or stay out of the split (\"Split Pagou\" product tab)."
+
+#: includes/classes/Split/Integration.php:181
+msgid "por pedido"
+msgstr "per order"
+
+#: includes/classes/Split/Integration.php:206
+msgid "Recebedor (apelido)"
+msgstr "Recipient (nickname)"
+
+#: includes/classes/Split/Integration.php:207
+msgid "ID da conta Pagou (UUID)"
+msgstr "Pagou account ID (UUID)"
+
+#: includes/classes/Split/Integration.php:208
+msgid "Tipo"
+msgstr "Type"
+
+#: includes/classes/Split/Integration.php:209
+msgid "Valor"
+msgstr "Amount"
+
+#: includes/classes/Split/Integration.php:216
+msgid "Ex.: Sócio"
+msgstr "E.g.: Partner"
+
+#. translators: %s: por pedido / por unidade
+#: includes/classes/Split/Integration.php:224
+#, php-format
+msgid "Fixo em R$ (%s)"
+msgstr "Fixed in R$ (%s)"
+
+#: includes/classes/Split/Integration.php:230
+msgid "Remover"
+msgstr "Remove"
+
+#: includes/classes/Split/Integration.php:236
+msgid "Adicionar recebedor"
+msgstr "Add recipient"
+
+#. translators: %d: máximo de recebedores
+#: includes/classes/Split/Integration.php:240
+#, php-format
+msgid "Até %d recebedores por venda. Linhas incompletas ou com ID inválido são ignoradas ao salvar."
+msgstr "Up to %d recipients per sale. Incomplete rows or rows with an invalid ID are ignored when saving."
+
+#: includes/classes/Split/Integration.php:278
+msgid "Split Pagou"
+msgstr "Split Pagou"
+
+#. translators: %s: link
+#: includes/classes/Split/Integration.php:300
+#, php-format
+msgid "O split está desligado. Ative em <a href=\"%s\">WooCommerce &gt; Configurações &gt; Pagou</a>."
+msgstr "Split is disabled. Enable it in <a href=\"%s\">WooCommerce &gt; Settings &gt; Pagou</a>."
+
+#: includes/classes/Split/Integration.php:307
+msgid "Split deste produto"
+msgstr "Split for this product"
+
+#: includes/classes/Split/Integration.php:309
+msgid "Usar a regra geral da loja"
+msgstr "Use the store global rule"
+
+#: includes/classes/Split/Integration.php:310
+msgid "Regra própria (abaixo)"
+msgstr "Own rule (below)"
+
+#: includes/classes/Split/Integration.php:311
+msgid "Sem split"
+msgstr "No split"
+
+#: includes/classes/Split/Integration.php:314
+msgid "Na regra própria, o percentual incide sobre o valor do produto no pedido e o valor fixo é por unidade vendida. A regra própria substitui a geral para este produto."
+msgstr "With an own rule, the percentage applies to the product amount in the order and the fixed amount is per unit sold. The own rule replaces the global one for this product."
+
+#: includes/classes/Split/Integration.php:315
+msgid "por unidade"
+msgstr "per unit"
+
+#: includes/classes/Split/Integration.php:349
+#: includes/classes/Split/Integration.php:374
+msgid "Split"
+msgstr "Split"
+
+#. translators: %s: erro
+#: includes/classes/Split/Integration.php:351
+#, php-format
+msgid "recusado pela Pagou (%s); venda sem split"
+msgstr "rejected by Pagou (%s); sale without split"
+
+#: includes/classes/Split/Integration.php:366
+msgid "registrado, aguardando pagamento"
+msgstr "registered, awaiting payment"
+
+#: includes/classes/Split/Integration.php:367
+msgid "repasse em andamento"
+msgstr "payout in progress"
+
+#: includes/classes/Split/Integration.php:368
+msgid "cancelado"
+msgstr "canceled"
+
+#: includes/classes/Split/Integration.php:369
+msgid "repasses concluídos"
+msgstr "payouts completed"
+
+#: includes/classes/Split/Integration.php:370
+msgid "revertido"
+msgstr "reversed"
+
+#: includes/classes/Split/Integration.php:371
+msgid "ação necessária (fale com a Pagou)"
+msgstr "action required (contact Pagou)"
+
+#: includes/classes/Split/Integration.php:374
+msgid "enviado"
+msgstr "sent"
+
+#. translators: %s: recebedor
+#: includes/classes/Split/Integration.php:382
+#, php-format
+msgid "Recebedor %s"
+msgstr "Recipient %s"
+
+#: includes/classes/Split/Integration.php:385
+msgid "Atualizar split"
+msgstr "Update split"
+
+#: includes/classes/Upgrade.php:82
+msgid "Pagou 2.0: o Pix e o boleto usavam chaves de API diferentes. Agora a chave é única para todos os meios de pagamento; mantivemos a do meio que estava ativo. Confira em WooCommerce > Configurações > Pagou."
+msgstr "Pagou 2.0: Pix and boleto used different API keys. The key is now the same for all payment methods; we kept the key of the method that was active. Check it in WooCommerce > Settings > Pagou."
+
+#: includes/classes/Upgrade.php:90
+msgid "Pagou 2.0: o ambiente de testes da Pagou mudou de endereço (agora api.pagou.cloud). Se a sua chave de sandbox parar de funcionar, gere uma nova no painel de sandbox da Pagou."
+msgstr "Pagou 2.0: the Pagou testing environment moved to a new address (now api.pagou.cloud). If your sandbox key stops working, generate a new one in the Pagou sandbox dashboard."
+
+#: includes/classes/Webhook/Controller.php:147
+msgid "Pagamento confirmado via Pix (Pagou)."
+msgstr "Payment confirmed via Pix (Pagou)."
+
+#: includes/classes/Webhook/Controller.php:164
+msgid "Boleto pago via Pix embutido (Pagou)."
+msgstr "Boleto paid via embedded Pix (Pagou)."
+
+#: includes/classes/Webhook/Controller.php:165
+msgid "Pagamento do boleto confirmado (Pagou)."
+msgstr "Boleto payment confirmed (Pagou)."
+
+#: includes/classes/Webhook/Controller.php:194
+msgid "Devolução confirmada pela Pagou."
+msgstr "Refund confirmed by Pagou."
+
+#: includes/classes/Webhook/Controller.php:200
+msgid "Cobrança cancelada na Pagou."
+msgstr "Charge canceled at Pagou."
+
+#: templates/boleto-processando.php:18
+msgid "Gerando seu boleto"
+msgstr "Generating your boleto"
+
+#: templates/boleto-processando.php:19
+msgid "O banco está registrando o boleto. Esta página se atualiza sozinha em alguns segundos; o boleto também chega no seu e-mail."
+msgstr "The bank is registering the boleto. This page updates itself in a few seconds; the boleto is also sent to your email."
+
+#: templates/boleto.php:27
+msgid "Seu boleto está pronto"
+msgstr "Your boleto is ready"
+
+#: templates/boleto.php:28
+msgid "Pague em qualquer banco ou aplicativo. A confirmação pode levar até 2 dias úteis."
+msgstr "Pay at any bank or banking app. Confirmation can take up to 2 business days."
+
+#: templates/boleto.php:33
+msgid "Valor do boleto"
+msgstr "Boleto amount"
+
+#. translators: %s: valor economizado
+#: templates/boleto.php:40
+#, php-format
+msgid "Você economizou %s neste meio de pagamento"
+msgstr "You saved %s with this payment method"
+
+#: templates/boleto.php:49
+msgid "Vencimento"
+msgstr "Due date"
+
+#: templates/boleto.php:57
+msgid "Copiar linha digitável"
+msgstr "Copy digitable line"
+
+#: templates/boleto.php:71
+msgid "Prefere pagar na hora? Este boleto aceita Pix"
+msgstr "Prefer to pay now? This boleto accepts Pix"
+
+#: templates/boleto.php:72
+msgid "Pagando por Pix, a confirmação é imediata em vez de levar dias úteis."
+msgstr "Paying with Pix, confirmation is immediate instead of taking business days."
+
+#: templates/boleto.php:75
+msgid "Copiar código Pix do boleto"
+msgstr "Copy the boleto Pix code"
+
+#: templates/boleto.php:82
+msgid "Dados bancários do boleto"
+msgstr "Boleto bank details"
+
+#: templates/boleto.php:85
+msgid "Banco emissor"
+msgstr "Issuing bank"
+
+#: templates/boleto.php:91
+msgid "Agência"
+msgstr "Branch"
+
+#: templates/boleto.php:94
+msgid "Conta"
+msgstr "Account"
+
+#: templates/boleto.php:97
+msgid "Cedente"
+msgstr "Assignor"
+
+#: templates/boleto.php:105
+msgid "Assim que o pagamento for identificado, você recebe a confirmação por e-mail."
+msgstr "As soon as the payment is identified, you will receive a confirmation by email."
+
+#: templates/cartao-analise.php:18
+msgid "Estamos confirmando seu pagamento"
+msgstr "We are confirming your payment"
+
+#: templates/cartao-analise.php:19
+msgid "O pagamento com cartão está em análise. Não é preciso pagar de novo: você recebe a confirmação por e-mail."
+msgstr "The card payment is under review. There is no need to pay again: you will receive a confirmation by email."
+
+#: templates/cartao-analise.php:23
+msgid "Esta página se atualiza sozinha quando o pagamento for confirmado."
+msgstr "This page updates itself when the payment is confirmed."
+
+#. translators: %s: valor pago
+#: templates/pagamento-confirmado.php:29
+#, php-format
+msgid "Recebemos %s. Seu pedido já está em preparação."
+msgstr "We received %s. Your order is being prepared."
+
+#. translators: %s: valor economizado
+#: templates/pagamento-confirmado.php:37
+#, php-format
+msgid "Você economizou %s."
+msgstr "You saved %s."
+
+#: templates/pix.php:23
+msgid "Falta pouco: pague com Pix"
+msgstr "Almost there: pay with Pix"
+
+#: templates/pix.php:24
+msgid "Seu pedido está reservado e será liberado assim que o pagamento for identificado."
+msgstr "Your order is reserved and will be released as soon as the payment is identified."
+
+#: templates/pix.php:29
+msgid "Valor a pagar"
+msgstr "Amount to pay"
+
+#. translators: %s: valor economizado
+#: templates/pix.php:36
+#, php-format
+msgid "Você economizou %s pagando com Pix"
+msgstr "You saved %s by paying with Pix"
+
+#: templates/pix.php:45
+msgid "Este código expira em"
+msgstr "This code expires in"
+
+#: templates/pix.php:59
+msgid "Aponte a câmera do app do seu banco"
+msgstr "Point your banking app camera"
+
+#: templates/pix.php:64
+msgid "Copiar código Pix"
+msgstr "Copy Pix code"
+
+#: templates/pix.php:70
+msgid "Abra o app do seu banco"
+msgstr "Open your banking app"
+
+#: templates/pix.php:71
+msgid "Escolha Pix e depois Pagar com QR Code ou Pix Copia e Cola"
+msgstr "Choose Pix, then Pay with QR Code or Pix Copy and Paste"
+
+#. translators: %s: valor do pedido
+#: templates/pix.php:76
+#, php-format
+msgid "Confirme o valor de %s"
+msgstr "Confirm the amount of %s"
+
+#: templates/pix.php:87
+msgid "Aguardando o pagamento. Esta página se atualiza sozinha assim que identificarmos."
+msgstr ""

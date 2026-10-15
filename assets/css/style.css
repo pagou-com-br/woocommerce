@@ -1,0 +1,549 @@
+.ac-content_widget
+    *
+    :not(
+        .wp-core-ui,
+        .wp-editor-wrap,
+        .tmce-active,
+        .wp-editor-tools,
+        .hide-if-no-js,
+        .wp-media-buttons,
+        .button,
+        .insert-media,
+        .add_media,
+        .wp-media-buttons-icon,
+        .wp-editor-tabs,
+        .wp-switch-editor,
+        .switch-tmce,
+        .switch-html,
+        .wp-editor-container,
+        .quicktags-toolbar,
+        .mce-tinymce,
+        .mce-container,
+        .mce-panel,
+        .mce-container-body,
+        .mce-stack-layout,
+        .mce-top-part,
+        .mce-stack-layout-item,
+        .mce-first,
+        .mce-menubar,
+        .mce-toolbar,
+        .mce-flow-layout,
+        .mce-widget,
+        .mce-btn,
+        .mce-menubtn,
+        .mce-flow-layout-item,
+        .mce-btn-has-text,
+        .mce-txt,
+        .mce-caret,
+        .mce-last,
+        .mce-toolbar-grp,
+        .mce-btn-group,
+        .mce-disabled,
+        .mce-ico,
+        .mce-i-undo,
+        .mce-i-redo,
+        .mce-i-bold,
+        .mce-i-italic,
+        .mce-i-alignleft,
+        .mce-i-aligncenter,
+        .mce-i-alignright,
+        .mce-i-alignjustify,
+        .mce-i-outdent,
+        .mce-i-indent,
+        .mce-edit-area,
+        .mce-statusbar,
+        .mce-path,
+        .mce-path-item,
+        .mce-resizehandle,
+        .mce-i-resize,
+        .mce-branding,
+        .mce-label,
+        .wp-editor-area
+    ) {
+    /* font-family: 'Baloo Thambi 2', sans-serif !important;
+*/
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box !important;
+    transition: all 0.3s linear;
+}
+.ac-pix_qr, .ac-code_bar{
+    width: 100%;
+    max-width: 500px !important;
+    margin: 20px auto !important;
+    display: block !important;
+}
+.ac-code_bar{
+    max-width: 100% !important;
+}
+.ac-pix_or{
+    text-align: center;
+}
+.ac-code_copy_b{
+    cursor: pointer;
+    background: #cbcbcb;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    text-align: center;
+    word-break: break-all;
+    white-space: normal;
+}
+.ac-code_copy_v{
+    cursor: pointer;
+}
+.ac-bank_info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.ac-boleto_embed{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto !important;
+    height: 300px;
+    display: block;
+    margin-bottom: 80px !important;
+}
+.ac-load_boleto{
+    display: block;
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 80px !important;
+}
+#ac-btn_see_pdf{
+    background: #333333;
+    padding: 10px 30px !important;
+    font-weight: 500;
+    color: white;
+    margin: 20px auto !important;
+    font-size: 13px;
+    border-radius: 100px;
+    box-shadow: 0 0 20px #79797961;
+    border: 2px solid white;
+    display: block;
+}
+#ac-barcode_bol{
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+/* Ícones dos meios de pagamento na lista do checkout */
+.wc_payment_method label img[src*="/pagou-payments-for-woocommerce/includes/img/pix.svg"],
+.wc_payment_method label img[src*="/pagou-payments-for-woocommerce/includes/img/boleto.svg"]{
+    max-height: 24px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+    float: none;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+}
+
+/* ==========================================================================
+   Tela de pagamento (Pix e boleto)
+   ========================================================================== */
+.pagou-pay{
+    --pp-fg:#09090B;
+    --pp-soft:#52525B;
+    --pp-muted:#A1A1AA;
+    --pp-line:#E4E4E7;
+    --pp-bg:#FFFFFF;
+    --pp-bg-soft:#FAFAFA;
+    --pp-accent:#32BCAD;
+    --pp-accent-ink:#0F766E;
+    max-width:720px;
+    margin:0 auto 32px;
+    border:1px solid var(--pp-line);
+    border-radius:12px;
+    background:var(--pp-bg);
+    overflow:hidden;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    color:var(--pp-fg);
+}
+
+.pagou-pay__head{padding:26px 26px 0;}
+.pagou-pay__title{
+    font-size:1.375rem;
+    font-weight:640;
+    letter-spacing:-0.02em;
+    margin:0 0 6px;
+    line-height:1.2;
+}
+.pagou-pay__lead{
+    font-size:.9375rem;
+    color:var(--pp-soft);
+    margin:0;
+    line-height:1.5;
+}
+
+/* Valor e prazo */
+.pagou-pay__amount{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:22px 26px;
+    margin:22px 0 0;
+    border-top:1px solid var(--pp-line);
+    border-bottom:1px solid var(--pp-line);
+    background:var(--pp-bg-soft);
+}
+.pagou-pay__amount-label,
+.pagou-pay__timer-label{
+    display:block;
+    font-size:.75rem;
+    font-weight:600;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    color:var(--pp-muted);
+    margin-bottom:4px;
+}
+.pagou-pay__amount-value{
+    display:block;
+    font-size:1.875rem;
+    font-weight:680;
+    letter-spacing:-0.025em;
+    line-height:1.1;
+}
+.pagou-pay__amount-value .woocommerce-Price-amount{font-size:inherit;font-weight:inherit;}
+.pagou-pay__saved{
+    display:inline-block;
+    margin-top:8px;
+    font-size:.8125rem;
+    font-weight:560;
+    color:var(--pp-accent-ink);
+    background:rgba(50,188,173,.10);
+    border:1px solid rgba(50,188,173,.22);
+    border-radius:100px;
+    padding:4px 10px;
+}
+.pagou-pay__saved .woocommerce-Price-amount{font-size:inherit;font-weight:640;color:inherit;}
+
+.pagou-pay__timer{text-align:right;min-width:120px;}
+.pagou-pay__timer-value{
+    font-size:1.25rem;
+    font-weight:660;
+    font-variant-numeric:tabular-nums;
+    letter-spacing:-0.01em;
+}
+.pagou-pay__timer.is-urgent .pagou-pay__timer-value{color:#B45309;}
+.pagou-pay__timer.is-expired .pagou-pay__timer-value{color:#B91C1C;font-size:1rem;}
+
+/* QR e ações */
+.pagou-pay__grid{
+    display:grid;
+    grid-template-columns:200px 1fr;
+    gap:26px;
+    padding:26px;
+    align-items:start;
+}
+.pagou-pay__qr-wrap{text-align:center;}
+.pagou-pay__qr{
+    display:block;
+    width:100%;
+    max-width:200px;
+    height:auto;
+    margin:0 auto 10px;
+    border:1px solid var(--pp-line);
+    border-radius:10px;
+    padding:8px;
+    background:#fff;
+    box-shadow:none;
+}
+.pagou-pay__qr-hint{
+    display:block;
+    font-size:.75rem;
+    color:var(--pp-muted);
+    line-height:1.4;
+}
+
+.pagou-pay__actions{display:flex;flex-direction:column;gap:12px;}
+.pagou-pay__actions--full{padding:26px;}
+
+.pagou-pay__copy{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    width:100%;
+    background:var(--pp-fg);
+    color:#fff;
+    border:1px solid var(--pp-fg);
+    border-radius:9px;
+    padding:13px 18px;
+    font-size:.9375rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:opacity .15s ease,background .15s ease;
+    font-family:inherit;
+}
+.pagou-pay__copy:hover{opacity:.88;}
+.pagou-pay__copy.is-copied{
+    background:var(--pp-accent-ink);
+    border-color:var(--pp-accent-ink);
+    opacity:1;
+}
+.pagou-pay__copy--ghost{
+    background:transparent;
+    color:var(--pp-fg);
+    border-color:var(--pp-line);
+}
+.pagou-pay__copy--ghost:hover{background:var(--pp-bg-soft);opacity:1;}
+.pagou-pay__copy--ghost.is-copied{color:#fff;}
+
+.pagou-pay__code{
+    display:block;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.75rem;
+    line-height:1.5;
+    color:var(--pp-soft);
+    background:var(--pp-bg-soft);
+    border:1px solid var(--pp-line);
+    border-radius:8px;
+    padding:10px 12px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.pagou-pay__code--line{
+    font-size:.9375rem;
+    text-align:center;
+    letter-spacing:.02em;
+    color:var(--pp-fg);
+    white-space:normal;
+}
+
+.pagou-pay__steps{
+    margin:4px 0 0;
+    padding-left:20px;
+    font-size:.875rem;
+    color:var(--pp-soft);
+    line-height:1.7;
+}
+.pagou-pay__steps li{margin:0;}
+.pagou-pay__steps .woocommerce-Price-amount{font-weight:600;color:var(--pp-fg);}
+
+.pagou-pay__secondary{
+    display:inline-block;
+    text-align:center;
+    font-size:.875rem;
+    font-weight:560;
+    color:var(--pp-fg);
+    text-decoration:none;
+    border:1px solid var(--pp-line);
+    border-radius:9px;
+    padding:11px 18px;
+}
+.pagou-pay__secondary:hover{background:var(--pp-bg-soft);}
+
+/* Boleto */
+.pagou-boleto__barcode{
+    display:block;
+    width:100%;
+    max-width:420px;
+    height:auto;
+    margin:6px auto;
+}
+.pagou-boleto__pix{
+    margin:0 26px 22px;
+    padding:18px;
+    border:1px dashed rgba(50,188,173,.5);
+    border-radius:10px;
+    background:rgba(50,188,173,.05);
+}
+.pagou-boleto__pix h3{
+    font-size:.9375rem;
+    font-weight:620;
+    margin:0 0 4px;
+}
+.pagou-boleto__pix p{
+    font-size:.8125rem;
+    color:var(--pp-soft);
+    margin:0 0 12px;
+    line-height:1.5;
+}
+
+/* Dados bancários */
+.pagou-pay__details{
+    margin:0 26px 22px;
+    border:1px solid var(--pp-line);
+    border-radius:9px;
+    overflow:hidden;
+}
+.pagou-pay__details summary{
+    cursor:pointer;
+    padding:12px 14px;
+    font-size:.875rem;
+    font-weight:560;
+    background:var(--pp-bg-soft);
+}
+.pagou-pay__details ul{list-style:none;margin:0;padding:6px 14px 12px;}
+.pagou-pay__details li{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    font-size:.8125rem;
+    padding:7px 0;
+    border-bottom:1px solid var(--pp-line);
+}
+.pagou-pay__details li:last-child{border-bottom:0;}
+.pagou-pay__details li span{color:var(--pp-muted);}
+
+/* Status do pagamento */
+.pagou-pay__status{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 26px;
+    border-top:1px solid var(--pp-line);
+    background:var(--pp-bg-soft);
+    font-size:.875rem;
+    color:var(--pp-soft);
+}
+.pagou-pay__status-dot{
+    flex:0 0 auto;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--pp-muted);
+}
+.pagou-pay__status.is-waiting .pagou-pay__status-dot{
+    background:var(--pp-accent);
+    animation:pagou-pulse 1.6s ease-in-out infinite;
+}
+.pagou-pay__status.is-paid{
+    background:rgba(50,188,173,.08);
+    color:var(--pp-accent-ink);
+    font-weight:560;
+}
+.pagou-pay__status.is-paid .pagou-pay__status-dot{background:var(--pp-accent-ink);animation:none;}
+
+@keyframes pagou-pulse{
+    0%,100%{opacity:1;}
+    50%{opacity:.35;}
+}
+
+@media (prefers-reduced-motion:reduce){
+    .pagou-pay__status.is-waiting .pagou-pay__status-dot{animation:none;}
+}
+
+@media (max-width:640px){
+    .pagou-pay__grid{grid-template-columns:1fr;gap:20px;padding:20px;}
+    .pagou-pay__qr-wrap{order:2;}
+    .pagou-pay__actions{order:1;}
+    .pagou-pay__head,.pagou-pay__amount,.pagou-pay__status{padding-left:20px;padding-right:20px;}
+    .pagou-pay__amount-value{font-size:1.625rem;}
+    .pagou-pay__timer{text-align:left;}
+    .pagou-boleto__pix,.pagou-pay__details{margin-left:20px;margin-right:20px;}
+}
+
+/* Correção: itens de grid precisam de min-width:0 para o texto truncar
+   em vez de estourar a largura do card e empurrar o botão para fora. */
+.pagou-pay__grid > *{min-width:0;}
+.pagou-pay__actions{min-width:0;width:100%;}
+.pagou-pay__code{max-width:100%;box-sizing:border-box;}
+.pagou-pay__copy{max-width:100%;box-sizing:border-box;}
+/* O card de pagamento vem antes do conteúdo do tema na página de obrigado */
+.woocommerce-order .pagou-pay{margin-top:0;}
+
+/* Pagamento confirmado */
+.pagou-pay--done{border-color:rgba(50,188,173,.4);}
+.pagou-pay__done{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    padding:20px 24px;
+    background:rgba(50,188,173,.06);
+}
+.pagou-pay__done-icon{
+    flex:0 0 auto;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#0F766E;
+    color:#fff;
+}
+.pagou-pay__done-title{
+    display:block;
+    font-size:1rem;
+    font-weight:640;
+    color:#09090B;
+    margin-bottom:3px;
+}
+.pagou-pay__done-text{
+    display:block;
+    font-size:.875rem;
+    color:#52525B;
+    line-height:1.5;
+}
+.pagou-pay__done-text .woocommerce-Price-amount{font-weight:600;color:#09090B;}
+
+/* ==========================================================================
+   Impressão da tela de pagamento
+   Quem imprime quer o código e o valor no papel. Botão de copiar, contagem
+   regressiva e aviso de "aguardando" não servem impressos.
+   ========================================================================== */
+@media print{
+    .pagou-pay{
+        border:1px solid #999 !important;
+        break-inside:avoid;
+        page-break-inside:avoid;
+        max-width:100% !important;
+    }
+    .pagou-pay__copy,
+    .pagou-pay__status,
+    .pagou-pay__timer,
+    .pagou-pay__qr-hint{display:none !important;}
+
+    .pagou-pay__grid{
+        display:grid !important;
+        grid-template-columns:170px 1fr !important;
+        gap:18px !important;
+    }
+    /* Limite absoluto do QR no papel, mesmo sem as outras regras */
+    .pagou-pay__qr{
+        width:170px !important;
+        max-width:170px !important;
+        height:auto !important;
+    }
+    /* No papel o código precisa aparecer inteiro, não truncado */
+    .pagou-pay__code{
+        white-space:normal !important;
+        word-break:break-all !important;
+        overflow:visible !important;
+        text-overflow:clip !important;
+        font-size:10px !important;
+        background:#fff !important;
+    }
+    .pagou-pay__amount{background:#fff !important;}
+    .pagou-boleto__pix{display:none !important;}
+}
+
+/* 2.0.0: QR desenhado no navegador e rótulos do checkout em blocos */
+.pagou-pay__qr-canvas{display:flex;justify-content:center;min-height:200px;}
+.pagou-boleto__pix .pagou-pay__qr-canvas{justify-content:flex-start;margin:8px 0 12px;}
+.pagou-blocos__rotulo{display:flex;align-items:center;gap:8px;width:100%;}
+.pagou-blocos__icone{max-height:24px;width:auto;margin-left:auto;}
+.pagou-blocos__descricao{margin:0;color:#52525B;font-size:.9em;}
+
+/* Cartão */
+.pagou-cartao__linha{display:flex;gap:12px;}
+.pagou-cartao__linha > *{flex:1 1 0;min-width:0;}
+.pagou-cartao--blocos .pagou-cartao__campo,.pagou-cartao--blocos .pagou-cartao__linha .pagou-cartao__campo:first-child{margin-top:12px !important;}
+.pagou-cartao__parcelas{margin-top:12px;}
+.pagou-cartao__parcelas label{display:block;font-size:.85em;margin-bottom:4px;color:#52525B;}
+.pagou-cartao__parcelas select,#pagou-cartao-parcelas{width:100%;min-height:44px;padding:8px 12px;border:1px solid #D4D4D8;border-radius:6px;background:#fff;}
+@media (max-width:480px){.pagou-cartao__linha{gap:8px;}}
