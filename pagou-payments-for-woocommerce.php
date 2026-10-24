@@ -6,7 +6,7 @@
  * Text Domain: pagou-payments-for-woocommerce
  * Domain Path: /languages
  * Author URI: https://pagou.com.br/
- * Version: 2.0.0
+ * Version: 2.0.1
  * Requires at least: 6.6
  * Requires PHP: 7.4
  * Requires Plugins: woocommerce
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PAGOU_WC_VERSION', '2.0.0' );
+define( 'PAGOU_WC_VERSION', '2.0.1' );
 define( 'PAGOU_WC_FILE', __FILE__ );
 define( 'PAGOU_WC_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PAGOU_WC_URL', plugin_dir_url( __FILE__ ) );

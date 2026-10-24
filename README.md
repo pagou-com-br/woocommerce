@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/pagou-com-br/woocommerce/releases/tag/v2.0.0"><img src="https://img.shields.io/badge/vers%C3%A3o-2.0.0-0071df?style=flat-square" alt="Versão 2.0.0"></a>
+  <a href="https://github.com/pagou-com-br/woocommerce/releases/tag/v2.0.1"><img src="https://img.shields.io/badge/vers%C3%A3o-2.0.1-0071df?style=flat-square" alt="Versão 2.0.1"></a>
   <a href="#requisitos"><img src="https://img.shields.io/badge/WordPress-6.6%2B-697ab1?style=flat-square&amp;logo=wordpress&amp;logoColor=white" alt="WordPress 6.6 ou superior"></a>
   <a href="#requisitos"><img src="https://img.shields.io/badge/WooCommerce-9.0%2B-697ab1?style=flat-square&amp;logo=woocommerce&amp;logoColor=white" alt="WooCommerce 9.0 ou superior"></a>
   <a href="#requisitos"><img src="https://img.shields.io/badge/PHP-7.4%2B-697ab1?style=flat-square&amp;logo=php&amp;logoColor=white" alt="PHP 7.4 ou superior"></a>
@@ -20,11 +20,11 @@
 <p align="center">
   <a href="https://wordpress.org/plugins/pagou-payments-for-woocommerce/"><strong>Instalar pelo WordPress.org</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/pagou-com-br/woocommerce/releases/download/v2.0.0/pagou-payments-for-woocommerce-2.0.0.zip"><strong>Baixar o plugin (.zip)</strong></a>
+  <a href="https://github.com/pagou-com-br/woocommerce/releases/download/v2.0.1/pagou-payments-for-woocommerce-2.0.1.zip"><strong>Baixar o plugin (.zip)</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/pagou-com-br/woocommerce/releases/tag/v2.0.0">Release notes</a>
+  <a href="https://github.com/pagou-com-br/woocommerce/releases/tag/v2.0.1">Release notes</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/pagou-com-br/woocommerce/releases/download/v2.0.0/SHA256SUMS">Checksum SHA-256</a>
+  <a href="https://github.com/pagou-com-br/woocommerce/releases/download/v2.0.1/SHA256SUMS">Checksum SHA-256</a>
 </p>
 
 <p align="center">
@@ -52,7 +52,7 @@ Plugin oficial da [Pagou](https://pagou.com.br/) para WooCommerce: Pix, boleto e
 ## Instalação
 
 - **Pelo WordPress (recomendado):** em **Plugins > Adicionar novo**, busque **Pagou** e clique em **Instalar agora**. As atualizações chegam pelo próprio painel.
-- **Pelo .zip:** [baixe o plugin](https://github.com/pagou-com-br/woocommerce/releases/download/v2.0.0/pagou-payments-for-woocommerce-2.0.0.zip) e envie em **Plugins > Adicionar novo > Enviar plugin**. É o mesmo pacote publicado no WordPress.org.
+- **Pelo .zip:** [baixe o plugin](https://github.com/pagou-com-br/woocommerce/releases/download/v2.0.1/pagou-payments-for-woocommerce-2.0.1.zip) e envie em **Plugins > Adicionar novo > Enviar plugin**. É o mesmo pacote publicado no WordPress.org.
 
 <a id="configuracao"></a>
 

@@ -2295,3 +2295,8 @@ var qrcode = function() {
 }(function () {
     return qrcode;
 }));
+
+// Pagou: expõe a biblioteca mesmo quando um otimizador junta os scripts dentro de uma função.
+if (typeof window !== 'undefined') {
+  window.qrcode = qrcode;
+}

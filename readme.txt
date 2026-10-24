@@ -5,7 +5,7 @@ Tags: woocommerce, pix, boleto, credit card, split payment
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -116,6 +116,10 @@ Yes. Choose "Sandbox" in WooCommerce > Settings > Pagou and use the API key of y
 
 == Changelog ==
 
+= 2.0.1 =
+* Correção: o QR Code do Pix não aparecia na tela de pagamento em parte das lojas; o código copia e cola funcionava normalmente. O script da tela carregava antes da biblioteca do QR Code. O mesmo afetava o código de barras do boleto.
+* Melhoria: o QR Code e o código de barras passam a ser desenhados mesmo com plugins de cache ou otimização que adiam, juntam ou reordenam os scripts da página.
+
 = 2.0.0 =
 * Novo: cartão de crédito, no checkout clássico e no checkout em blocos. O cartão é criptografado no navegador pela Pagou e só um token chega à loja.
 * Novo: parcelamento configurável pelo lojista: número máximo de parcelas, valor mínimo da parcela, parcelas sem juros e juros ao mês (tabela Price). Os juros aparecem no pedido como "Juros do parcelamento".
@@ -201,6 +205,9 @@ Yes. Choose "Sandbox" in WooCommerce > Settings > Pagou and use the API key of y
 * Versão inicial do plugin, integração com métodos de pagamento PIX e Boleto via Pagou.
 
 == Upgrade Notice ==
+
+= 2.0.1 =
+Corrige o QR Code do Pix que não aparecia na tela de pagamento em algumas lojas. Atualização recomendada.
 
 = 2.0.0 =
 Nova versão com cartão de crédito, parcelamento, cartão salvo e split de pagamento. As configurações são migradas automaticamente; confira a nova aba WooCommerce > Configurações > Pagou após atualizar.

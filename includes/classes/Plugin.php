@@ -143,7 +143,7 @@ class Plugin {
 			wp_enqueue_style( 'pagou-wc' );
 		}
 
-		wp_register_script( 'pagou-wc-qrcode', PAGOU_WC_URL . 'assets/js/vendor/qrcode.js', array(), '1.4.4', true );
+		wp_register_script( 'pagou-wc-qrcode', PAGOU_WC_URL . 'assets/js/vendor/qrcode.js', array(), self::versao_asset( 'assets/js/vendor/qrcode.js' ), true );
 		wp_register_script( 'pagou-wc-barcode', PAGOU_WC_URL . 'assets/js/vendor/JsBarcode.all.min.js', array(), '3.11.6', true );
 
 		wp_register_script(
@@ -175,14 +175,14 @@ class Plugin {
 	 */
 	public static function enfileirar_tela_pagamento( $pix ) {
 		wp_enqueue_style( 'pagou-wc' );
-		wp_enqueue_script( 'pagou-wc-pagamento' );
 
-		if ( $pix ) {
-			wp_enqueue_script( 'pagou-wc-qrcode' );
-		} else {
+		// As bibliotecas entram antes do pagamento.js, que desenha o QR e o código de barras.
+		wp_enqueue_script( 'pagou-wc-qrcode' );
+		if ( ! $pix ) {
 			wp_enqueue_script( 'pagou-wc-barcode' );
-			wp_enqueue_script( 'pagou-wc-qrcode' );
 		}
+
+		wp_enqueue_script( 'pagou-wc-pagamento' );
 	}
 
 	/**

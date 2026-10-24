@@ -64,35 +64,52 @@
 		} );
 	} );
 
-	// ---------- QR Code do Pix (desenhado a partir do código copia e cola) ----------
-	Array.prototype.forEach.call( raiz.querySelectorAll( '[data-pagou-qr]' ), function ( alvo ) {
-		var codigo = alvo.getAttribute( 'data-pagou-qr' ) || '';
-
-		if ( ! codigo || typeof window.qrcode !== 'function' ) {
-			return;
+	// ---------- QR Code do Pix e código de barras do boleto ----------
+	// As bibliotecas podem chegar depois deste script (plugins de cache ou otimização que
+	// adiam ou reordenam scripts): o que faltar é desenhado de novo no load da página.
+	function desenharQr() {
+		if ( typeof window.qrcode !== 'function' ) {
+			return false;
 		}
 
-		try {
-			var qr = window.qrcode( 0, 'M' );
-			qr.addData( codigo );
-			qr.make();
+		Array.prototype.forEach.call( raiz.querySelectorAll( '[data-pagou-qr]' ), function ( alvo ) {
+			var codigo = alvo.getAttribute( 'data-pagou-qr' ) || '';
 
-			var img = document.createElement( 'img' );
-			img.className = 'pagou-pay__qr';
-			img.width = 200;
-			img.height = 200;
-			img.alt = pagouPagamento.qrAlt;
-			img.src = qr.createDataURL( 6, 2 );
-			alvo.appendChild( img );
-		} catch ( e ) {
-			// Sem QR, o copia e cola continua disponível.
+			if ( ! codigo || alvo.querySelector( '.pagou-pay__qr' ) ) {
+				return;
+			}
+
+			try {
+				var qr = window.qrcode( 0, 'M' );
+				qr.addData( codigo );
+				qr.make();
+
+				var img = document.createElement( 'img' );
+				img.className = 'pagou-pay__qr';
+				img.width = 200;
+				img.height = 200;
+				img.alt = pagouPagamento.qrAlt;
+				img.src = qr.createDataURL( 6, 2 );
+				alvo.appendChild( img );
+			} catch ( e ) {
+				// Sem QR, o copia e cola continua disponível.
+			}
+		} );
+
+		return true;
+	}
+
+	function desenharBarras() {
+		var barras = raiz.querySelector( '[data-pagou-barcode]' );
+
+		if ( ! barras || barras.getAttribute( 'data-pagou-desenhado' ) ) {
+			return true;
 		}
-	} );
 
-	// ---------- Código de barras do boleto ----------
-	var barras = raiz.querySelector( '[data-pagou-barcode]' );
+		if ( typeof window.JsBarcode !== 'function' ) {
+			return false;
+		}
 
-	if ( barras && typeof window.JsBarcode === 'function' ) {
 		try {
 			window.JsBarcode( barras, barras.getAttribute( 'data-pagou-barcode' ), {
 				format: 'ITF',
@@ -102,9 +119,22 @@
 				displayValue: false,
 				margin: 6
 			} );
+			barras.setAttribute( 'data-pagou-desenhado', '1' );
 		} catch ( e ) {
 			barras.style.display = 'none';
 		}
+
+		return true;
+	}
+
+	var qrPronto = ! raiz.querySelector( '[data-pagou-qr]' ) || desenharQr();
+	var barrasPronto = desenharBarras();
+
+	if ( ! qrPronto || ! barrasPronto ) {
+		window.addEventListener( 'load', function () {
+			desenharQr();
+			desenharBarras();
+		} );
 	}
 
 	// ---------- Boleto ainda em registro: recarrega poucas vezes ----------
